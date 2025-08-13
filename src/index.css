@@ -8,35 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* CalcNest Design System - Cozy & Mathematical */
+    --background: 45 25% 98%;
+    --foreground: 220 15% 15%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 45 20% 99%;
+    --card-foreground: 220 15% 15%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 45 20% 99%;
+    --popover-foreground: 220 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Warm mathematical blue-green */
+    --primary: 195 85% 45%;
+    --primary-foreground: 45 20% 99%;
+    --primary-glow: 195 85% 55%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Soft computation green */
+    --secondary: 165 60% 88%;
+    --secondary-foreground: 220 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Gentle background tones */
+    --muted: 45 15% 95%;
+    --muted-foreground: 220 10% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Calculation accent */
+    --accent: 180 70% 75%;
+    --accent-foreground: 220 15% 25%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 45 20% 99%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 45 15% 90%;
+    --input: 45 15% 95%;
+    --ring: 195 85% 45%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* CalcNest gradients and special effects */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-glow)));
+    --gradient-soft: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
+    --gradient-calculation: linear-gradient(45deg, hsl(var(--accent)) 0%, hsl(var(--secondary)) 100%);
+    
+    /* Mathematical shadows */
+    --shadow-calculator: 0 8px 32px -8px hsl(var(--primary) / 0.15);
+    --shadow-soft: 0 4px 16px -4px hsl(var(--foreground) / 0.08);
+    --shadow-glow: 0 0 24px hsl(var(--primary-glow) / 0.3);
+
+    /* Animation variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 

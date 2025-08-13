@@ -1,1 +1,4 @@
 project_id = "nkfvnueufzqvctfxjira"
+
+[functions.generate-calculator]
+verify_jwt = false
